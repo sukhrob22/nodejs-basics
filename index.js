@@ -4,7 +4,8 @@ const server = http.createServer((request, response) => {
     console.log(request.url);
 
     // response.write('Hello world');
-    response.write('<h1>Hello world</h1>');
+    response.write('<h1>Hello world 2</h1>');
+    response.write('<h2>Hello world 4</h2>');
     response.end();
 });
 
