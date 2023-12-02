@@ -35,6 +35,16 @@ const server = http.createServer((req, res) => {
                     res.end(conten);
                 }
             );
+        } else if (req.url === '/api/admin') {
+            res.writeHead(200, { 'Content-Type': 'text/json' });
+
+            const admin = {
+                name: 'Suxrob',
+                surname: 'Ergashev',
+                job: 'Full-Stack developer',
+            };
+
+            res.end(JSON.stringify(admin));
         }
 
         // res.end(`
